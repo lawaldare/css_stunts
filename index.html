@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #one {
+                 position: relative;
+                 text-align: center;
+                 display: inline-block;
+                 font-size: 6em;
+                 text-transform: capitalize;
+                 color:blue;
+                 text-shadow: 3px 3px 0px green, 6px 6px 0px red, 9px 9px 0px black;
+                 letter-spacing: 10px;
+            }
+            
+            p {
+                font-size: 4em;
+                font-weight: bold;
+                word-spacing: 10px;
+                letter-spacing: 10px;
+            }
+            .container {
+                margin: auto;
+                text-align: center;
+                padding: 0;
+            }
+            body {
+                background: linear-gradient(60deg, cyan, gold);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <p>Your name is:</p>
+        <p id="one">Adesewa Owolade</p>
+        </div>
+        
+        <script>
+        let yourName = prompt("What's your full name?");
+        let getName = document.getElementById("one");
+        getName.textContent =yourName;
+        
+        </script>
+    </body>
+</html>
