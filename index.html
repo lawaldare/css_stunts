@@ -13,6 +13,26 @@
                  text-shadow: 3px 3px 0px green, 6px 6px 0px red, 9px 9px 0px black;
                  letter-spacing: 10px;
             }
+            #two {
+                 font-size: 9em;
+                 text-transform: capitalize;
+                 color:blue;
+                 -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+                         transform: skew(-7deg, -7deg) rotate(7deg);
+                 -webkit-transform-origin: center center;
+                         transform-origin: center center;
+                 text-shadow: 1px 1px green,
+                              2px 2px green,
+                              3px 3px green,
+                              4px 4px green,
+                              5px 5px red,
+                              6px 6px red,
+                              7px 7px red,
+                              8px 8px black,
+                              9px 9px black,
+                              10px 10px black,
+                              11px 11px 15px rgba(0,0,0,0.5);
+            }
             
             p {
                 font-size: 4em;
@@ -34,12 +54,15 @@
         <div class="container">
         <p>Your CSS3 designed name is:</p>
         <p id="one"></p>
+        <p id="two"></p>
         </div>
         
         <script>
         let yourName = prompt("Enter text to design");
         let getName = document.getElementById("one");
+        let getName2 = document.getElementById("two");
         getName.textContent =yourName;
+        getName2.textContent =yourName;
         
         </script>
     </body>
